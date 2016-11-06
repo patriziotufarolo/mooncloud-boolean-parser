@@ -14,7 +14,7 @@ parser.yy.parseError = (message, hash) => {
     throw new SyntaxError(message, hash);
 }
 (() => {
-    let module = angular.module('mooncloud.boolean-parser')
+    let module = angular.module('mooncloud.booleanParser')
     module.factory('mooncloudBooleanParserService', function() {
         return {
             parse: (formula) => parser.parse(formula)
