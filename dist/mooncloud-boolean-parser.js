@@ -331,12 +331,6 @@
 	        Not: function Not(token, operand) {
 	            this.token = token;
 	            this.operand = operand;
-	            if (operand.left) {
-	                this.left = operand.left;
-	            }
-	            if (operand.right) {
-	                this.right = operand.right;
-	            }
 	        },
 
 	        Implies: function Implies(token, left, right) {
