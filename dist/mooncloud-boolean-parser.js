@@ -80,7 +80,7 @@
 	    throw new SyntaxError(message, hash);
 	};
 	(function () {
-	    var module = angular.module('mooncloud.boolean-parser');
+	    var module = angular.module('mooncloud.booleanParser');
 	    module.factory('mooncloudBooleanParserService', function () {
 	        return {
 	            parse: function parse(formula) {
