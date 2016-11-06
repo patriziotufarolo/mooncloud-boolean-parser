@@ -1,0 +1,18 @@
+{
+  "name": "mooncloud-boolean-parser",
+  "authors": [
+    "Patrizio Tufarolo <patrizio.tufarolo@studenti.unimi.it>"
+  ],
+  "description": "mooncloud-boolean-parser",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
