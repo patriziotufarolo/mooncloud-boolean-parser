@@ -1,6 +1,6 @@
 //let parser = require('./parser');
 import parser from "./parser";
-
+import ast from "./ast";
 class SyntaxError extends Error {
     constructor(message, hash) {
         super();
@@ -17,6 +17,7 @@ parser.yy.parseError = (message, hash) => {
     let module = angular.module('mooncloudBooleanParser',[]);
     module.factory('mooncloudBooleanParserService', function() {
         return {
+            ast: ast,
             parse: (formula) => parser.parse(formula)
         };
     });

@@ -32,41 +32,4 @@ expr
 
 %%
 
-var ast = {
-  Token: function Token(value) {
-    this.value = value;
-  },
-
-  Var: function Var(token) {
-    this.token = token;
-  },
-
-  And: function And(token, left, right) {
-    this.token = token;
-    this.left = left;
-    this.right = right;
-  },
-
-  Or: function Or(token, left, right) {
-    this.token = token;
-    this.left = left;
-    this.right = right;
-  },
-
-  Not: function Not(token, operand) {
-    this.token = token;
-    this.operand = operand;
-  },
-
-  Implies: function Implies(token, left, right) {
-    this.token = token;
-    this.left = left;
-    this.right = right;
-  },
-
-  Iff: function Iff(token, operand) {
-    this.token = token; 
-    this.operand = operand;
-  }
-};
-
+var ast = require('./ast');
