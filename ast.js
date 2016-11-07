@@ -28,6 +28,6 @@ class Implies extends BinaryOperator { }
 class Iff extends BinaryOperator { }
 class Not extends UnaryOperator { }
 
-export default {
+module.exports = {
     Token, Var, And, Or, Implies, Iff, Not
 }
