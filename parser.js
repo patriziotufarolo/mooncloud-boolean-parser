@@ -18,20 +18,14 @@ break;
 case 2:
  this.$ = new ast.Var(new ast.Token($$[$0])); 
 break;
-case 3:
- this.$ = new ast.And(new ast.Token($$[$0-1]), $$[$0-2], $$[$0]); 
-break;
-case 4:
- this.$ = new ast.Or(new ast.Token($$[$0-1]), $$[$0-2], $$[$0]); 
-break;
-case 5:
- this.$ = new ast.Implies(new ast.Token($$[$0-1]), $$[$0-2], $$[$0]); 
+case 3: case 4: case 5:
+ this.$ = new ast.BinaryOperator(new ast.Token($$[$0-1]), $$[$0-2], $$[$0]); 
 break;
 case 6:
- this.$ = new ast.Iff(new ast.Token($$[$0-1]), $$[$0-2], $$[$0] ); 
+ this.$ = new ast.BinaryOperator(new ast.Token($$[$0-1]), $$[$0-2], $$[$0] ); 
 break;
 case 7:
- this.$ = new ast.Not(new ast.Token($$[$0-1]), $$[$0]); 
+ this.$ = new ast.UnaryOperator(new ast.Token($$[$0-1]), $$[$0]); 
 break;
 case 8:
  this.$ = $$[$0-1]; 

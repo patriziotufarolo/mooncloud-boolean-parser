@@ -29,5 +29,5 @@ class Iff extends BinaryOperator { }
 class Not extends UnaryOperator { }
 
 module.exports = {
-    Token, Var, And, Or, Implies, Iff, Not
+    Token, Var, BinaryOperator, UnaryOperator
 }
