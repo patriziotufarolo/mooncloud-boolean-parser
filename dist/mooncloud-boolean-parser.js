@@ -657,7 +657,7 @@
 	                        break;
 	                }
 	            },
-	            rules: [/^(?:\s+)/, /^(?:[cf]#[0-9]+)/, /^(?:and\b)/, /^(?:or\b)/, /^(?:not\b)/, /^(?:implies\b)/, /^(?:iff\b)/, /^(?:\()/, /^(?:\))/, /^(?:$)/],
+	            rules: [/^(?:\s+)/, /^(?:[ctf]#[0-9]+)/, /^(?:and\b)/, /^(?:or\b)/, /^(?:not\b)/, /^(?:implies\b)/, /^(?:iff\b)/, /^(?:\()/, /^(?:\))/, /^(?:$)/],
 	            conditions: { "INITIAL": { "rules": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], "inclusive": true } }
 	        };
 	        return lexer;
@@ -766,7 +766,7 @@
 	}(UnaryOperator);
 
 	module.exports = {
-	    Token: Token, Var: Var, And: And, Or: Or, Implies: Implies, Iff: Iff, Not: Not, BinaryOperator: BinaryOperator, UnaryOperator: UnaryOperator
+	    Token: Token, Var: Var, BinaryOperator: BinaryOperator, UnaryOperator: UnaryOperator
 	};
 
 /***/ }

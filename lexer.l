@@ -1,7 +1,7 @@
 %%
 
 \s+                   { /* skip whitespace */ }
-[cf]"#"[0-9]+           { return 'TOKEN_VAR'; }
+[ctf]"#"[0-9]+           { return 'TOKEN_VAR'; }
 "and"                 { return 'TOKEN_AND'; }
 "or"                  { return 'TOKEN_OR'; }
 "not"                 { return 'TOKEN_NOT'; }
