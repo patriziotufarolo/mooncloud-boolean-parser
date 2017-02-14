@@ -4,7 +4,7 @@
     "Patrizio Tufarolo <patrizio.tufarolo@studenti.unimi.it>"
   ],
   "description": "mooncloud-boolean-parser",
-  "main": "",
+  "main": "dist/mooncloud-boolean-parser.js",
   "license": "MIT",
   "homepage": "",
   "private": true,
